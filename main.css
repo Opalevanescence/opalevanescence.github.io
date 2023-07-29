@@ -11,33 +11,34 @@ body, html {
 **************/
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/Cherry\ banner\ wide.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/Wink.jpeg");
   width: 100%;
   /* Set a specific height */
-  height: 700px;
+  height: 500px;
 
   /* Position and center the image to scale nicely on all screens */
-  background-attachment: fixed;
-  background-position: right 0% top 0%;
+  /* background-attachment: fixed; */
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: auto 700px;
-  /* position: relative; */
+
+  background-size: cover;
+  position: relative;
 }
 
 /* Place text in the middle of the image */
 .hero-text {
   text-align: left;
   position: absolute;
-  top: 500px;
-  left: 10%;
+  top: 150px;
+  left: 60%;
   /* transform: translate(-50%, -50%); */
   color: white;
-  text-shadow: 2px 2px #000000;
+  /* text-shadow: 2px 2px #000000; */
 }
 
 @media (max-width: 550px) {
     .hero-image {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/Cherry\ banner\ tall.jpeg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/Wink.jpeg");
         background-attachment: scroll;
         /* background-position: right 0; */
         height: 350px; 
@@ -49,7 +50,7 @@ body, html {
 
 @media (min-width: 1435px) {
     .hero-image {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/Cherry\ banner\ tall.jpeg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/Wink.jpeg");
         background-size: cover;
         background-position: right 0% top -220px;
     }
@@ -71,9 +72,9 @@ The Navigation Bar
 #navigation {
 list-style-type: none;
 margin: 0;
-padding: 0;
+padding: 0 auto;
 overflow: hidden;
-background-color: rgba(0, 0, 0, 0.5);
+background-color: rgba(69, 108, 147, 0.5);
 position: fixed;
 top: 0px;
 width: 100%;
@@ -81,8 +82,12 @@ z-index: 1;
 }
 
 #navigation>li {
-float: left;
+    float: left;
 }
+/* #navigation>li:hover {
+    float: left;
+    background-color: #FFF;
+} */
 
 .float-right{
     float: right !important;
@@ -98,7 +103,7 @@ text-decoration: none;
 
 /* Change the link color to #111 (black) on hover */
 #navigation>li  a:hover {
-background-color: #111;
+    background-color: rgba(178, 202, 227, 0.5);
 }
 
 
@@ -110,10 +115,18 @@ background-color: #111;
     margin: 10px 10%;
 }
 
+.section{
+    
+}
+
 .section-title{
     text-align: center;
     text-decoration: underline;
 }
+
+/* .section-blue{
+    background-color: #F4F9FF;
+} */
   
 .text-center{
     text-align: center;
@@ -194,7 +207,7 @@ background-color: #111;
 
 .card-project:hover {
     background-image: none !important;
-    background-color:#fcecf0 !important;
+    background-color:#b2cae3 !important;
 }
 
 .card-project:hover .card-project-description h4{
@@ -263,28 +276,41 @@ background-color: #111;
   Research Cards
 ******************/
 
-#Quantum-Image{
-    background-image: url("images/Quantum.jpg");
+#fringe-code{
+    background-image: url("images/fringe-landing.png");
 }
 
-#Coin-Image{
-    background-image: url("images/Coin.jpeg");
+#metabase{
+    background-image: url("images/metabase.png");
 }
 
-#MCSP-Image{
-    background-image: url("images/MCSP.png");
+#ruby-portfolio{
+    background-image: url("images/portfolio.png");
 }
 
-#NVM-Image{
-    background-image: url("images/NVM.png");
+#plantopia{
+    background-image: url("images/plantopia.png");
 }
 
-#Hash-Image{
-    background-image: url("images/epicyle.jpeg");
+#cocktails{
+    background-image: url("images/cocktails.png");
 }
 
-#Facial-Image{
-    background-image: url("images/Facial.jpeg");
+
+/*****************
+  Writing Cards
+******************/
+
+#startup-grind{
+    background-image: url("images/Sustainable-Fashion.jpg");
+}
+
+#fringe{
+    background-image: url("images/fringe-presentation.jpg");
+}
+
+#manage-labs{
+    background-image: url("images/ml-article.png");
 }
 
 
@@ -320,7 +346,7 @@ background-color: #111;
 ******************/
 
 .footer{
-    background-color: #d1e9b4;
+    background-color: #F4F9FF;
     padding: 10px;
 }
 
@@ -341,8 +367,12 @@ background-color: #111;
 } */
 
 .fa-stack{
-    color: #453C8D;
+    color: #456c93;
 }
+.fa-stack:hover {
+    color: #b2cae3
+}
+
 /* .icon-facebook {
    color:#3b5998;
 }
