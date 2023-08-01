@@ -2,6 +2,11 @@ body, html {
     height: 100%;
     margin: 0px;
     width: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    font-family: 'EB Garamond', serif; 
 }
 
 
@@ -70,20 +75,23 @@ The Navigation Bar
 ******************/
 
 #navigation {
-list-style-type: none;
-margin: 0;
-padding: 0 auto;
-overflow: hidden;
-background-color: rgba(69, 108, 147, 0.5);
-position: fixed;
-top: 0px;
-width: 100%;
-z-index: 1;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgba(69, 108, 147, 0.5);
+    position: fixed;
+    top: 0px;
+    padding: 0px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
-#navigation>li {
+/* #navigation>li {
     float: left;
-}
+} */
 /* #navigation>li:hover {
     float: left;
     background-color: #FFF;
@@ -115,10 +123,6 @@ text-decoration: none;
     margin: 10px 10%;
 }
 
-.section{
-    
-}
-
 .section-title{
     text-align: center;
     text-decoration: underline;
@@ -145,11 +149,10 @@ text-decoration: none;
     width: 40%;
     padding: 10%;
     box-sizing: border-box;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    float: left;
 }
 
 .card-project-description{
@@ -165,40 +168,11 @@ text-decoration: none;
     margin-bottom: 2px;
     color:white;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    display: none
 }
 
 .card-project-description p{
     display: none;
-}
-
-
-#RTC-Image{
-    background-image: url("images/RTC.jpeg");
-}
-
-#MS-Image{
-    background-image: url("images/Aspire\ Talk.jpeg");
-}
-
-#SSRC-Image{
-    background-image: url("images/SSRC.jpeg");
-}
-
-#UCSC-Image{
-    background-image: url("images/BaskinTA.jpeg");
-}
-
-#Sandia-Image{
-    background-image: url("images/Sandia.png");
-}
-
-#LMG-Image{
-    background-image: url("images/LMG.jpeg");
-}
-
-#GA-Image{
-    background-image: url("images/GA.jpeg");
-    margin-bottom: 10px;
 }
 
 .bottom-card{
@@ -213,6 +187,7 @@ text-decoration: none;
 .card-project:hover .card-project-description h4{
     text-shadow: none;
     color: black;
+    display: inherit;
 }
 
 
