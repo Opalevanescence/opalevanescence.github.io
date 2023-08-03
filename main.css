@@ -61,15 +61,6 @@ p {
     }
 }
 
-/*************
-  The Banner Canvas
-**************/
-
-#petals {
-    position:absolute;
-    z-index:20;
-}
-
 /*****************
 The Navigation Bar 
 ******************/
@@ -88,14 +79,6 @@ The Navigation Bar
     justify-content: center;
     flex-direction: row;
 }
-
-/* #navigation>li {
-    float: left;
-} */
-/* #navigation>li:hover {
-    float: left;
-    background-color: #FFF;
-} */
 
 .float-right{
     float: right !important;
@@ -123,31 +106,42 @@ text-decoration: none;
     margin: 10px 10%;
 }
 
-.section-title{
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    text-decoration: underline;
 }
 
-/* .section-blue{
-    background-color: #F4F9FF;
-} */
-  
-.text-center{
-    text-align: center;
+.section-title{
+    text-decoration: underline;
+    margin-bottom: 0;
 }
 
 /*****************
     Work Cards
 ******************/
 
+.content-margin {
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 24px;
+}
+
 .card-project {
-    margin: 2% 5%;
-    padding: 8px;
+    /* margin: 2% 5%; */
+    /* padding: 8px; */
     box-shadow: 0px 0px 16px rgb(0 0 0 / 20%);
-    max-width: 750px;
+    /* max-width: 750px; */
     border: 5px solid white;
-    width: 40%;
-    padding: 10%;
+    height: calc(100vw/4);
+    /* width: 40%; */
+    /* padding: 10%; */
     box-sizing: border-box;
     background-position: top;
     background-repeat: no-repeat;
@@ -157,15 +151,15 @@ text-decoration: none;
 
 .card-project-description{
     position: absolute;
-    top: 10px;
-    left: 10px;
+    padding: 24px;
+    /* top: 10px; */
+    /* left: 10px; */
     /* display: none; */
 }
 
-
 .card-project-description h4{
     margin-top: 0px;
-    margin-bottom: 2px;
+    margin-bottom: 8px;
     color:white;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     display: none
@@ -175,13 +169,9 @@ text-decoration: none;
     display: none;
 }
 
-.bottom-card{
-    margin: 0% 30%;
-}
-
 .card-project:hover {
     background-image: none !important;
-    background-color:#b2cae3 !important;
+    background-color:#d3e3f7 !important;
 }
 
 .card-project:hover .card-project-description h4{
@@ -201,11 +191,21 @@ text-decoration: none;
 }
 
 @media (max-width: 1100px) {
+    .cards {
+        display: grid;
+        grid-template-columns: auto;
+        max-width: 650px;
+        gap: 24px;
+        margin: 0 auto;
+    }
     .card-project {
-        margin: 5% 10%;
-        width: 80%;
-        padding: 20%;
-        float: center;
+        height: calc(100vw/3);
+        min-height: 200px;
+        /* width: 100%; */
+        /* display: contents; */
+        /* margin: 5% 10%; */
+        /* width: 80%; */
+        /* padding: 20%; */
     }
     .bottom-card{
         margin: 5% 10%;
@@ -231,20 +231,6 @@ text-decoration: none;
     .card-project:hover .card-project-description p.short-550{
         display: none;
     }
-}
-
-/*****************
-  Research Interests
-******************/
-
-
-.interests{
-    text-align: center;
-}
-
-#Venn-Image{
-    background-image: url("images/Venn.png");
-    margin-bottom: 10px;
 }
 
 /*****************
@@ -288,6 +274,9 @@ text-decoration: none;
     background-image: url("images/ml-article.png");
 }
 
+/*****************
+About
+******************/
 
 .home-profile {
     width: 250px;
@@ -307,10 +296,6 @@ text-decoration: none;
     }
 }
 
-/*****************
-      About
-******************/
-
 .p-3{
     width: 100%;
     min-height: 250px;
@@ -321,7 +306,7 @@ text-decoration: none;
 ******************/
 
 .footer{
-    background-color: #F4F9FF;
+    background-color: #d3e3f7;
     padding: 10px;
 }
 
