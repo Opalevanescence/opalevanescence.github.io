@@ -57,7 +57,7 @@ p {
     .hero-image {
         background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/Wink.jpeg");
         background-size: cover;
-        background-position: right 0% top -220px;
+        /* background-position: right 0% top -220px; */
     }
 }
 
