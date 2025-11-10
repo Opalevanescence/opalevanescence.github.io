@@ -2,16 +2,33 @@ body, html {
     height: 100%;
     margin: 0px;
     width: 100%;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Hind Madurai', sans-serif;
 }
 
 p {
-    font-family: 'EB Garamond', serif; 
+    font-family: 'Hind Madurai', serif; 
+}
+
+h1 {
+    font-family: 'Felipa', sans-serif;
+    font-size: 42px;
+    margin: 0 0 8px 0;
+    color: black;
+}
+
+h2 {
+    font-family: 'Quintessential', sans-serif;
+    font-size: 32px;
 }
 
 h3 {
+    font-family: 'Della Respira', sans-serif;
     color: #474747;
     margin: 2px;
+}
+
+h4 {
+    font-family: 'Della Respira', sans-serif;
 }
 
 
@@ -142,8 +159,7 @@ text-decoration: none;
 }
 
 .section-title{
-    text-decoration: underline;
-    margin-bottom: 0;
+    /* text-decoration: underline; */
 }
 
 /*****************
