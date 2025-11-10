@@ -9,17 +9,23 @@ p {
     font-family: 'EB Garamond', serif; 
 }
 
+h3 {
+    color: #474747;
+    margin: 2px;
+}
+
 
 
 /*************
   The Banner 
 **************/
-.hero-image {
+.hero-background {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/Wink.jpeg");
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/sunset.jpeg"); */
+  background-image: url("images/sunset.png");
   width: 100%;
   /* Set a specific height */
-  height: 500px;
+  height: 300px;
 
   /* Position and center the image to scale nicely on all screens */
   /* background-attachment: fixed; */
@@ -30,36 +36,58 @@ p {
   position: relative;
 }
 
+.hero-image{
+    width: 150px;
+    height: 150px;
+}
+
 /* Place text in the middle of the image */
-.hero-text {
+.hero-content {
   text-align: left;
   position: absolute;
-  top: 150px;
-  left: 60%;
-  /* transform: translate(-50%, -50%); */
-  color: white;
+  height: 100%;
+  width: 100%;
+  padding: 80px 0px 0px 48px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 16px;;
+
+  
   /* text-shadow: 2px 2px #000000; */
 }
 
-@media (max-width: 550px) {
+.hero-text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.hero-subtext {
+    /* display: flex;
+    flex-direction: column;
+    align-items: left; */
+}
+
+/* @media (max-width: 550px) {
     .hero-image {
         background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/Wink.jpeg");
         background-attachment: scroll;
-        /* background-position: right 0; */
-        height: 350px; 
+        height: 350px;
+        top: 50px;
     }
     .hero-text {
         top: 100px;
     }
-}
+} */
 
-@media (min-width: 1435px) {
+/* @media (min-width: 1435px) {
     .hero-image {
         background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/Wink.jpeg");
         background-size: cover;
-        /* background-position: right 0% top -220px; */
     }
-}
+} */
 
 /*****************
 The Navigation Bar 
@@ -167,6 +195,7 @@ text-decoration: none;
 
 .card-project-description p{
     display: none;
+    color: black;
 }
 
 .card-project:hover {
@@ -284,7 +313,7 @@ About
     -o-object-fit: cover;
     object-fit: cover;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 15%);
-    border-radius: 8px;
+    border-radius: 48px;
     float: left;
     margin-right: 20px;
     margin-bottom: 20px;
