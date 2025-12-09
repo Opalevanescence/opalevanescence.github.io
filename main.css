@@ -37,18 +37,12 @@ h4 {
   The Banner 
 **************/
 .hero-background {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/sunset.jpeg"); */
   background-image: url("images/sunset.png");
   width: 100%;
-  /* Set a specific height */
   height: 300px;
-
-  /* Position and center the image to scale nicely on all screens */
-  /* background-attachment: fixed; */
+  box-shadow: 0px 0px 16px rgb(0 0 0 / 25%);
   background-position: center center;
   background-repeat: no-repeat;
-
   background-size: cover;
   position: relative;
 }
@@ -58,20 +52,16 @@ h4 {
     height: 150px;
 }
 
-/* Place text in the middle of the image */
 .hero-content {
   text-align: left;
   position: absolute;
-  height: 100%;
   width: 100%;
   padding: 80px 0px 0px 48px;
 
   display: flex;
   flex-direction: row;
-  gap: 16px;;
-
-  
-  /* text-shadow: 2px 2px #000000; */
+  align-items: center;
+  gap: 16px;
 }
 
 .hero-text {
@@ -79,32 +69,6 @@ h4 {
     flex-direction: column;
 }
 
-
-
-.hero-subtext {
-    /* display: flex;
-    flex-direction: column;
-    align-items: left; */
-}
-
-/* @media (max-width: 550px) {
-    .hero-image {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/Wink.jpeg");
-        background-attachment: scroll;
-        height: 350px;
-        top: 50px;
-    }
-    .hero-text {
-        top: 100px;
-    }
-} */
-
-/* @media (min-width: 1435px) {
-    .hero-image {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/Wink.jpeg");
-        background-size: cover;
-    }
-} */
 
 /*****************
 The Navigation Bar 
@@ -158,10 +122,6 @@ text-decoration: none;
     text-align: center;
 }
 
-.section-title{
-    /* text-decoration: underline; */
-}
-
 /*****************
     Work Cards
 ******************/
@@ -178,14 +138,10 @@ text-decoration: none;
 }
 
 .card-project {
-    /* margin: 2% 5%; */
-    /* padding: 8px; */
     box-shadow: 0px 0px 16px rgb(0 0 0 / 20%);
-    /* max-width: 750px; */
     border: 5px solid white;
-    height: calc(100vw/4);
-    /* width: 40%; */
-    /* padding: 10%; */
+    height: 250px;
+    width: 442px;
     box-sizing: border-box;
     background-position: top;
     background-repeat: no-repeat;
@@ -196,9 +152,6 @@ text-decoration: none;
 .card-project-description{
     position: absolute;
     padding: 24px;
-    /* top: 10px; */
-    /* left: 10px; */
-    /* display: none; */
 }
 
 .card-project-description h4{
@@ -239,18 +192,8 @@ text-decoration: none;
     .cards {
         display: grid;
         grid-template-columns: auto;
-        max-width: 650px;
         gap: 24px;
         margin: 0 auto;
-    }
-    .card-project {
-        height: calc(100vw/3);
-        min-height: 200px;
-        /* width: 100%; */
-        /* display: contents; */
-        /* margin: 5% 10%; */
-        /* width: 80%; */
-        /* padding: 20%; */
     }
     .bottom-card{
         margin: 5% 10%;
@@ -335,12 +278,6 @@ About
     margin-bottom: 20px;
 }
 
-@media (max-width: 600px) {
-    .research{
-        padding: 30%; 
-    }
-}
-
 .p-3{
     width: 100%;
     min-height: 250px;
@@ -355,63 +292,15 @@ About
     padding: 10px;
 }
 
-
-.fa-stack-1x {
-    color:white;
-}
-
 .icon-container{
     display: inline-block;
 }
-/* .icon-linkedin{
-    color:#0072b1;
+.fa-stack-1x {
+    color:white;
 }
-
-.icon-github{
-    color: #6e5494;
-} */
-
 .fa-stack{
     color: #456c93;
 }
 .fa-stack:hover {
     color: #b2cae3
 }
-
-/* .icon-facebook {
-   color:#3b5998;
-}
-
-.icon-twitter {
-    color:#00aced;
-}
-
-.icon-gplus{
-    color:#dd4b39;
-} */
-
-/* .fa {
-    -webkit-font-smoothing: antialiased;
-    display: flex;
-    text-align: center;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-    font-family: 'Font Awesome 5 Brands';
-    height: 20px;
-}
-
-.social-media-icons{
-    list-style: none;
-}
-
-.icon-link{
-    margin: 0 10%;
-    display: inline;
-}
-
-.icon{
-    position: relative;
-    float: center;
-} */
