@@ -225,6 +225,14 @@ text-decoration: none;
   Research Cards
 ******************/
 
+#dev-management-feedback{
+    background-image: url("images/coworkers-chat.jpg");
+}
+
+#dev-management-goals{
+    background-image: url("images/mac-and-notebook.jpg");
+}
+
 #fringe-code{
     background-image: url("images/fringe-landing.png");
 }
